@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tall Tail Films</title>
+  <meta name="description" content="Tall Tail Films is a commercial production company. New website coming soon.">
+  <link rel="canonical" href="https://talltailfilms.com/">
+  <meta name="theme-color" content="#CD7D4A">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tall Tail Films">
+  <meta property="og:title" content="Tall Tail Films">
+  <meta property="og:description" content="A commercial production company. Coming soon.">
+  <meta property="og:url" content="https://talltailfilms.com/">
+  <meta property="og:image" content="https://talltailfilms.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Tall Tail Films","url":"https://talltailfilms.com/"}
+  </script>
+
+  <style>
+    :root {
+      --orange: #CD7D4A;
+      --ink: #141110;
+    }
+    * { margin: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      background: var(--orange);
+      color: var(--ink);
+      font-family: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      min-height: 100svh;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      display: grid;
+      place-content: center;
+      text-align: center;
+      padding: 48px 24px;
+      animation: rise 1.4s cubic-bezier(.2,.7,.2,1) both;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: clamp(4.5rem, 26vw, 11rem);
+      line-height: .88;
+      letter-spacing: -.02em;
+    }
+    h1 span { display: block; }
+    .films {
+      margin-top: 1.4rem;
+      font-size: clamp(.8rem, 2.4vw, 1.05rem);
+      letter-spacing: .6em;
+      padding-left: .6em; /* balance trailing letter-spacing */
+      text-transform: uppercase;
+    }
+    .rule {
+      width: 40px;
+      height: 1px;
+      background: var(--ink);
+      margin: 2.4rem auto;
+      opacity: .6;
+    }
+    .note {
+      font-size: clamp(1rem, 2.6vw, 1.2rem);
+      line-height: 1.6;
+    }
+    .email { margin-top: 1.6rem; font-size: clamp(.95rem, 2.4vw, 1.05rem); }
+    .email a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(20, 17, 16, .4);
+      padding-bottom: 2px;
+      transition: border-color .2s;
+    }
+    .email a:hover, .email a:focus-visible { border-color: var(--ink); outline: none; }
+    footer {
+      text-align: center;
+      padding: 24px 16px 32px;
+      font-size: .8rem;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      opacity: .65;
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      main { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1><span>Tall</span><span>Tail</span></h1>
+    <p class="films">Films</p>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="note">A commercial production company.<br>
+      Coming soon.</p>
+    <p class="email"><a href="mailto:hello@talltailfilms.com">hello@talltailfilms.com</a></p>
+  </main>
+  <footer>New York &middot; Los Angeles</footer>
+</body>
+</html>
